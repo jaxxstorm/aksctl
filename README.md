@@ -2,7 +2,7 @@
 
 aksctl is a proof of concept tool that allows you to create [Azure AKS](https://azure.microsoft.com/en-us/services/kubernetes-service/) clusters quickly and easily from the command line.
 
-It was inspired by its namesake, [eksctl](https://github.com/weaveworks/eksctl) and its purpose is to show how easy it is to create useful provisioning tools with the [Pulumi](https://pulumi.com/) [Automation API](pulumi.com/)
+It was inspired by its namesake, [eksctl](https://github.com/weaveworks/eksctl) and its purpose is to show how easy it is to create useful provisioning tools with the [Pulumi](https://pulumi.com/) [Automation API](https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/x/auto)
 
 > :warning: **This is a proof of concept, and not designed to be used anywhere near your production environment**: Look at the code and be inspired!
 
@@ -29,7 +29,7 @@ aksctl create cluster --name aksctl -o jaxxstorm -p aksctl -s test
 
 Here I'm specifying my org, the name of my cluster and a pulumi project and stack to use.
 
-Destroy my cluster is just as easy:
+Destroying my cluster is just as easy:
 
 ```
 aksctl delete cluster --name aksctl -o jaxxstorm -p aksctl -s test
